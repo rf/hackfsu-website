@@ -158,6 +158,7 @@ line-height: 30px;
 /*HOME*/
 h1.big-tittle
 {
+text-align: top;
 font-size: 120px;
 line-height: 100px;
 font-weight: 700;
