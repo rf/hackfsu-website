@@ -209,7 +209,7 @@ a.button, a.button.green
 	color: #ffffff;
 	border: 1px solid #ffffff;
 	border-radius: 40px;
-	text-align: center;
+	text-align: right;
 	padding: 15px 40px;
 	cursor: pointer;
 	margin-bottom: 25px;
