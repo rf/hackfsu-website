@@ -131,6 +131,7 @@ margin: 0px;
 {
 	padding-top: 150px;
 }
+
 h2.section-title
 {
 	font-size: 70px;
@@ -138,6 +139,7 @@ h2.section-title
 	letter-spacing: -5px;
 	line-height: 55px;
 	color: #222222;
+    text-align: center; 
 }
 .title-separator
 {
@@ -505,15 +507,15 @@ font-size: 22px;
 {
 color: #d9d9d9;
 }
-ul#contact-form li
+ul#register-form li
 {
 	margin-bottom: 20px;
 }
-ul#contact-form li.last-child
+ul#register-form li.last-child
 {
 	text-align: right;
 }
-ul#contact-form li #name, ul#contact-form li #contact-email, ul#contact-form li #website 
+ul#register-form li #name, ul#register-form li #email, ul#register-form li #school 
 {
 	width: 408px;
 	border: 0;
@@ -528,7 +530,7 @@ ul#contact-form li #name, ul#contact-form li #contact-email, ul#contact-form li 
 	border-radius: 50px;
 	color: #d9d9d9;
 }
-ul#contact-form li #message
+ul#register-form li #message
 {
 	width: 408px;
 	margin-left: 0;
@@ -544,7 +546,7 @@ ul#contact-form li #message
 	border-radius: 25px;
 	color: #d9d9d9;
 }
-ul#contact-form li #send-message
+ul#register-form li #send-message
 {	
 	margin-right: 4px;
 	margin-top: 0;
@@ -872,4 +874,12 @@ a:visited{
 }
 a:hover{
 	color:#329d78;
+}
+
+img.register-button {
+	height:auto;
+	width:auto;
+}
+img.register-button:hover {
+	content:url(../images/reg_btn_hvr.png);
 }
