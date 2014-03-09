@@ -1,4 +1,10 @@
 @media screen and (max-width: 1018px) {
+
+.hero-button {
+  height: 100px;
+  width: 300px;
+  line-height: 100px;
+}
 	
 div.content-960
 { 
@@ -28,10 +34,16 @@ ul#contact-form li #message
 	width: 357px;
 }
 
+.bigmode { display: none; }
+.smallmode { display: block; }
+
 }
 
 
 @media screen and (max-width: 840px) {
+
+.bigmode { display: none; }
+.smallmode { display: block; }
 	
 div.content-960
 { 
@@ -108,9 +120,19 @@ margin: 0 5px;
 
 @media screen and (max-width: 423px) {
 
+.bigmode { display: hidden; }
+.smallmode { display: block; }
+
 div.content-960
 { 
 	width: 90%;
+}
+
+.hero-button {
+  height: 100px;
+  width: 300px;
+  line-height: 100px;
+  float: center;
 }
 
 h1.big-tittle {
