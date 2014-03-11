@@ -367,11 +367,6 @@ jQuery(window).resize(function() {
 //Helper Methods -->
 //------------------------------------------------------------------------
 var displayHints = function() {
-    if (jQuery().attachHint) {
-        jQuery('#name, #submit-name').attachHint('Name');
-        jQuery('#email, #submit-email').attachHint('Email address');
-        jQuery('#school, #submit-website').attachHint('Your school');
-    }
 }
 var StringFormat = function() {
     var s = arguments[0];

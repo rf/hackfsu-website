@@ -203,10 +203,11 @@ iframe
 {
 	width: 100%;
 }
-a.button, a.button.green 
+.button, .button.green 
 {
 	display: inline-block;
-	color: #ffffff;
+	color: #444444;
+  font-size: 18px;
 	border: 1px solid #ffffff;
 	border-radius: 40px;
 	text-align: right;
@@ -215,6 +216,24 @@ a.button, a.button.green
 	margin-bottom: 25px;
 	vertical-align: middle;
 	text-decoration: none;
+}
+
+.button:active, .button-border:active
+{
+	position: relative;
+	top: 1px;	
+}
+
+.button:hover, .button.green:hover
+{
+color: white;
+background-color: #4abd92;
+}
+
+.button.fill-green
+{
+color: white;
+background-color: #4abd92;
 }
 
 .bigmode { display: block; }
@@ -282,21 +301,6 @@ a.button, a.button.green
 }
 
 
-a.button:active, a.button-border:active
-{
-	position: relative;
-	top: 1px;	
-}
-a.button:hover, a.button.green:hover
-{
-color: white;
-background-color: #4abd92;
-}
-a.button.fill-green
-{
-color: white;
-background-color: #4abd92;
-}
 .alert
 {
 background-color: #d7e7d0;

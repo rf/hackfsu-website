@@ -52,6 +52,7 @@ padding-top: 14px;
 {
 height: 0 !important;
 }
+
 .main-menu
 {
 background: transparent;
@@ -61,6 +62,11 @@ background: transparent;
 -o-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
+
+div.main-menu-fixbg {
+  background-color: #222222;
+}
+
 .sticky-wrapper.is-sticky .main-menu
 {
 background-color: #222222;
@@ -515,7 +521,18 @@ ul#register-form li.last-child
 {
 	text-align: right;
 }
-ul#register-form li #name, ul#register-form li #email, ul#register-form li #school 
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+ul#register-form li #name, ul#register-form li #email, ul#register-form li #school, ul#register-form li #dietary, ul#register-form li #githuburl, ul#register-form li #username, ul#register-form li #password, ul#register-form li #passwordconfirm
 {
 	width: 408px;
 	border: 0;
@@ -530,6 +547,8 @@ ul#register-form li #name, ul#register-form li #email, ul#register-form li #scho
 	border-radius: 50px;
 	color: #d9d9d9;
 }
+
+
 ul#register-form li #message
 {
 	width: 408px;
@@ -546,6 +565,7 @@ ul#register-form li #message
 	border-radius: 25px;
 	color: #d9d9d9;
 }
+
 ul#register-form li #send-message
 {	
 	margin-right: 4px;
@@ -882,4 +902,18 @@ img.register-button {
 }
 img.register-button:hover {
 	content:url(../images/reg_btn_hvr.png);
+}
+
+/* form validation error class */
+.error {
+  color: #FF0000;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }

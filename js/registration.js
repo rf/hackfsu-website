@@ -21,6 +21,14 @@ function register () {
 
   var user = new Parse.User();
   var data = getData();
+
+  if (data.passwordconfirm != data.password) {
+    $('#submitbtn').attr('disabled', false);
+    $('#submitbtn').html('Submit Registration');
+    return alert("Passwords do not match!");
+  }
+
+  delete data.passwordconfirm;
   for (var i in data) user.set(i, data[i]);
 
   function __doSignup (resumeFile) {
@@ -51,7 +59,11 @@ function register () {
 
       var parts = file.name.split('.');
       var ext = parts[parts.length - 1].toUpperCase();
-      if (ext !== "PDF") return alert("Resume must be .pdf file");
+      if (ext !== "PDF") {
+        $('#submitbtn').attr('disabled', false);
+        $('#submitbtn').html('Submit Registration');
+        return alert("Resume must be .pdf file");
+      }
 
       parseFile = new Parse.File(name, file);
     }
@@ -59,8 +71,9 @@ function register () {
   } catch (e) { 
     /* do nothing if the file shit doesnt work */
   } finally {
-    __doSignup(parseFile);
   }
+
+  __doSignup(parseFile);
 }
 
 $('#regform').on('submit', function (e) {
@@ -71,5 +84,11 @@ $('#regform').on('submit', function (e) {
 
 window.getData = getData;
 window.register = register;
+
+var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
+alert = function (stuff) {
+  $('#remodal p').html(stuff);
+  inst.open();
+};
 
 }());

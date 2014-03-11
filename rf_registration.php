@@ -23,6 +23,8 @@
         <link type="text/css" rel="stylesheet" href="css/colors.css"/>
         <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
 
+        <link type="text/css" rel="stylesheet" href="css/jquery.remodal.css"/>
+
         <!--[if lt IE 9]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->            
@@ -70,13 +72,17 @@
                 </li>
 
                 <li>
-                    <input type="text" id="name" name="name" required placeholder="Full Name" />
+                    <input type="password" id="passwordconfirm" name="passwordconfirm" required placeholder="Password Confirm" />
+                </li>
+
+                <li>
+                    <input type="text" id="name" name="name" required placeholder="Full Name"  value="<?php echo $_POST['name']; ?>" />
                 </li>
                 <li class="email-holder">
-                    <input type="email" id="email" name="email" required placeholder="Email"/>
+                    <input type="email" id="email" name="email" required placeholder="Email" value="<?php echo $_POST['email']; ?>" />
                 </li>
                 <li class="website-holder">
-                    <input type="text" id="school" name="school" required placeholder="School"/>
+                    <input type="text" id="school" name="school" required placeholder="School" value="<?php echo $_POST['school']; ?>" />
                 </li>
 
                 <li>
@@ -138,7 +144,7 @@
                 <li>
                   <!-- Disgusting crap to have a styled upload button -->
                   <script> function upFile() { document.getElementById('upfile').click(); } </script>
-                  <button class="button" id="upload" onclick="upFile(); return false;">Upload Resume</button>
+                  <button class="button" id="upload" onclick="upFile(); return false;">Select Resume PDF</button>
                   <div style='height: 0px;width:0px; overflow:hidden;'><input id="upfile" type="file" value="upload" data-file /></div>
                 </li>
 
@@ -198,6 +204,15 @@
         <div class="footer-copyright center-text">Created by: <a href="http://www.technolegy.org/">TechNOLEgy</a> at Florida State University</div>
         </div>    
 
+        <div id="remodal" class="remodal" data-remodal-id="modal">
+            <p style="font-size: 20px">
+              Flat, responsive, lightweight, fast, easy customizable modal window plugin
+              with declarative state notation and hash tracking.
+            </p>
+            <br>
+            <a class="remodal-confirm" href="#">OK</a>
+        </div>
+
  <!--Load JavaScript-->
         <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>   
         <script type="text/javascript" src="js/jquery.isotope.min.js"></script>             
@@ -215,7 +230,7 @@
         <script type="text/javascript" src="js/jquery.vticker-min.js"></script>
         <script type="text/javascript" src="php/scriptsData.php"></script>
         <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>     
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/jquery.remodal.js"></script>
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.17.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>       
         <script type="text/javascript" src="js/registration.js"></script>       
