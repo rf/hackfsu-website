@@ -242,6 +242,7 @@ jQuery(window).load(function() {
         });
     });
 
+/*
     //Big Social hover
     jQuery('.big-social a').hover(function() {
         jQuery(this).find('img').css({
@@ -252,7 +253,7 @@ jQuery(window).load(function() {
             'margin-top': '0px'
         });
     });
-
+*/
 
     //Fix for background slider pagination
     jQuery('#slide-list').css({
