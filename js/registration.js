@@ -35,7 +35,7 @@ function register () {
     if (resumeFile) user.set('resume', resumeFile);
 
     user.signUp().then(function () {
-      alert("You've been signed up successfully!");
+      alert("You've been signed up successfully!", "http://hackfsu.com");
 
       $('#submitbtn').attr('disabled', false);
       $('#submitbtn').html('Submit Registration');
@@ -86,9 +86,15 @@ window.getData = getData;
 window.register = register;
 
 var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
-alert = function (stuff) {
+alert = function (stuff, redirect) {
   $('#remodal p').html(stuff);
   inst.open();
+
+  if (redirect) {
+    $(document).on('closed', '.remodal', function () {
+      window.location = redirect;
+    });
+  }
 };
 
 }());
