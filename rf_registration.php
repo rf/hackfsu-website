@@ -62,8 +62,8 @@
             <div class="center-relative menu-holder">
                 <div class="menu-logo left"><img src="images/menu_logo.png" alt="Sensa"/></div>
                 <ul class="right montserrat-font">
-                    <li class=""><a href="index.html">Home</a></li>
-                    <li class="active"><a href="#about">Registration</a></li>
+                    <li class=""><a href="index.html">HOME</a></li>
+                    <li class="active"><a href="#about">REGISTRATION</a></li>
                 </ul>
                 <div class="clear"></div>
             </div>      
