@@ -102,33 +102,6 @@
                 </li>
 
                 <li>
-                  <b>Dietary restrictions:</b> <br>
-
-                  <input type="radio" name="dietary" value="vegetarian" id="dietveg" /> <label for="dietveg">Vegetarian or Vegan</label> <br>
-                  <input type="radio" name="dietary" value="gluten" id="dietglut" /> <label for="dietglut">Gluten intolerance</label> <br>
-                </li>
-
-
-
-                <li>
-                    <input type="text" id="dietary" name="dietaryother" placeholder="Other dietary restrictions?"/>
-                </li>
-
-                <li>
-                  <b>T-shirt size:</b> <br>
-
-                  <input required type="radio" name="shirtsize" value="wxsmall" id="shirtwxsmall" /> <label for="shirtwxsmall">Women's X-Small</label> <br>
-                  <input required type="radio" name="shirtsize" value="wsmall" id="shirtwsmall" /> <label for="shirtwsmall">Women's Small</label> <br>
-                  <input required type="radio" name="shirtsize" value="wmedium" id="shirtwmedium" /> <label for="shirtwmedium">Women's Medium</label> <br> <br>
-
-                  <input required type="radio" name="shirtsize" value="usmall" id="shirtusmall" /> <label for="shirtusmall">Unisex Small</label> <br>
-                  <input required type="radio" name="shirtsize" value="umedium" id="shirtumedium" /> <label for="shirtumedium">Unisex Medium</label> <br>
-                  <input required type="radio" name="shirtsize" value="ularge" id="shirtularge" /> <label for="shirtularge">Unisex Large</label> <br>
-                  <input required type="radio" name="shirtsize" value="uxlarge" id="shirtuxlarge" /> <label for="shirtuxlarge">Unisex X-Large</label> <br>
-                </li>
-
-
-                <li>
                   <b>What kind of developer are you? (optional)</b>
                   <p>Tell us what you know so we can help you find a team at the
                   event.</p>
@@ -160,14 +133,8 @@
                 <li>
                   <!-- Disgusting crap to have a styled upload button -->
                   <script> function upFile() { document.getElementById('upfile').click(); } </script>
-                  <button class="button" id="upload" onclick="upFile(); return false;">Select Resume PDF</button>
+                  <button class="button" id="upload" onclick="upFile(); return false;">Select Resume PDF (Optional)</button>
                   <div style='height: 0px;width:0px; overflow:hidden;'><input id="upfile" type="file" value="upload" data-file /></div>
-                </li>
-
-                <li>
-                  <b>Are you currently looking for job or internship opportunities?</b> <br>
-                  <input type="radio" name="job" value="yes" id="jobyes" /> <label for="jobyes">Yes</label> <br>
-                  <input type="radio" name="job" value="no" id="jobno" /> <label for="jobno">No</label> <br>
                 </li>
 
                 <li class="last-child"> </li>
