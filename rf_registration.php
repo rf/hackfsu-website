@@ -102,31 +102,6 @@
                 </li>
 
                 <li>
-                  <b>What kind of developer are you? (optional)</b>
-                  <p>Tell us what you know so we can help you find a team at the
-                  event.</p>
-
-                  <input type="checkbox" name="skillset" value="backend" id="skillbackend" />
-                  <label for="skillbackend">Back-end</label><br>
-
-                  <input type="checkbox" name="skillset" value="frontend" id="skillfrontend" />
-                  <label for="skillfrontend">Front-end</label><br>
-
-                  <input type="checkbox" name="skillset" value="designer" id="skilldesigner" />
-                  <label for="skilldesigner">Designer</label><br>
-
-                  <input type="checkbox" name="skillset" value="ios" id="skillios" />
-                  <label for="skillios">iOS</label><br>
-
-                  <input type="checkbox" name="skillset" value="android" id="skillandroid" />
-                  <label for="skillandroid">Android</label><br>
-
-                  <input type="checkbox" name="skillset" value="noob" id="skillnoob" />
-                  <label for="skillnoob">Noob (that's okay!)</label><br>
-
-                </li>
-
-                <li>
                   <input type="url" name="github" id="githuburl" placeholder="Github URL (optional)">
                 </li>
 
