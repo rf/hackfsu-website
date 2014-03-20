@@ -493,7 +493,7 @@ background-position: 75% 0;
 }
 .contact.section
 {
-padding-bottom: 250px;
+padding-bottom: 10px;
 }
 .contact h2.section-title
 {
@@ -581,7 +581,7 @@ ul#register-form li #send-message
 }
 .footer-content
 {
-padding: 100px 0;
+padding: 10px 0;
 }
 .footer-content .title-separator
 {
