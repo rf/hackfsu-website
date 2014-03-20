@@ -581,7 +581,7 @@ ul#register-form li #send-message
 }
 .footer-content
 {
-padding: 10px 0;
+padding: 80px 0;
 }
 .footer-content .title-separator
 {
@@ -603,7 +603,7 @@ cursor: pointer;
 }
 .footer-copyright
 {
-padding: 20px 0;
+padding-top: 20px;
 color: #d9d9d9;
 font-size: 14px;
 }
