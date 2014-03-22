@@ -1,11 +1,16 @@
 jQuery(document).ready(function() {
 
+    jQuery(".home").height(jQuery(window).height() - 150);
+
+/*
     //Set home section to be always full screen
     if (jQuery(window).height() > jQuery("#dry-home").innerHeight()) {
         jQuery(".home").height(jQuery(window).height() - 150);
     } else {
         jQuery(".home").height('auto');
     }
+
+    */
 
     displayHints();
 
@@ -355,11 +360,19 @@ jQuery(window).resize(function() {
         //don't set a full screen in IE8
     } else {
         //Set home section to be always full screen
+        //
+        jQuery(".home").height(jQuery(window).height() - 150);
+      
+      /* not sure I understand what this logic was supposed to do
         if (jQuery(window).height() > jQuery("#dry-home").innerHeight()) {
             jQuery(".home").height(jQuery(window).height() - 150);
+            console.log("a");
         } else {
             jQuery(".home").height('auto');
+            console.log("b");
         }
+        */
+        
     }
 
 });

@@ -534,7 +534,8 @@ input[type=checkbox] {
 
 ul#register-form li #name, ul#register-form li #email, ul#register-form li #school, ul#register-form li #dietary, ul#register-form li #githuburl, ul#register-form li #username, ul#register-form li #password, ul#register-form li #passwordconfirm
 {
-	width: 408px;
+	max-width: 408px;
+  width: 90%;
 	border: 0;
 	padding-top:13px;
 	padding-bottom:13px;
@@ -929,3 +930,9 @@ img.register-button:hover {
 	padding-bottom: 100px;
 	padding-top: 5px;
 }
+
+img#sponsors {
+  max-width: 960px;
+  width: 100%;
+}
+
