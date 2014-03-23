@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
 
     var countto = 1396717200;
 
-    setInterval(function () {
+    function updateTime () {
       var timeto = Math.floor(countto - (Date.now() / 1000));
       var days = Math.floor(timeto / (60 * 60 * 24));
       timeto -= (days * 60 * 60 * 24);
@@ -20,7 +20,11 @@ jQuery(document).ready(function() {
 
       //$('.big-countdown').html(pad(days) + " days. " + pad(hours) + " hours. <br>" + pad(minutes) + " minutes. " + pad(timeto) + " seconds. ");
       $('.big-countdown').html(pad(days) + "d " + pad(hours) + "h " + pad(minutes) + "m " + pad(timeto) + "s ");
-    }, 1000);
+    }
+
+    updateTime();
+
+    setInterval(updateTime, 1000);
 
     jQuery(".home").height(jQuery(window).height() - 150);
 
