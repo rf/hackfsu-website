@@ -37,11 +37,13 @@ div.content-960 img
 	width: auto;
 	height: auto;
 }
+
 .full-width img
 {	
 width: 100%;
 height: auto;
 }
+
 /*MENU*/
 .menu-logo
 {
@@ -167,17 +169,43 @@ h1.big-tittle
 {
 text-align: top;
 font-size: 120px;
-line-height: 100px;
 font-weight: 700;
 letter-spacing: -5px;
 color: #ffffff;
 }
+
+/*HOME*/
+h1.big-date
+{
+text-align: top;
+font-size: 50px;
+font-weight: 700;
+margin-top: 30px;
+letter-spacing: -2px;
+color: #ffffff;
+}
+
+
+
+h1.big-countdown
+{
+text-align: top;
+font-size: 40px;
+margin-top: 40px;
+line-height: 20px;
+font-weight: 700;
+color: #ffffff;
+letter-spacing: -2px;
+}
+
+
 h2.big-tittle-description
 {
 	max-width: 450px;
 	color: #ffffff;
 	font-weight: 400;
 }
+
 /*END HOME*/
 
 /*SERVICE*/

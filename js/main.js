@@ -1,5 +1,27 @@
 jQuery(document).ready(function() {
 
+    function pad(n) {
+      return (n < 10) ? ("0" + n) : n;
+    }
+
+    var countto = 1396717200;
+
+    setInterval(function () {
+      var timeto = Math.floor(countto - (Date.now() / 1000));
+      var days = Math.floor(timeto / (60 * 60 * 24));
+      timeto -= (days * 60 * 60 * 24);
+
+      var hours = Math.floor(timeto / (60 * 60));
+      timeto -= (hours * 60 * 60);
+
+      var minutes = Math.floor(timeto / (60));
+      timeto -= (minutes * 60);
+
+
+      //$('.big-countdown').html(pad(days) + " days. " + pad(hours) + " hours. <br>" + pad(minutes) + " minutes. " + pad(timeto) + " seconds. ");
+      $('.big-countdown').html(pad(days) + "d " + pad(hours) + "h " + pad(minutes) + "m " + pad(timeto) + "s ");
+    }, 1000);
+
     jQuery(".home").height(jQuery(window).height() - 150);
 
 /*
