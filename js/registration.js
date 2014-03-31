@@ -37,7 +37,7 @@ function register () {
     if (resumeFile) user.set('resume', resumeFile);
 
     user.signUp().then(function () {
-      alert("You've been signed up successfully!", "http://hackfsu.com");
+      alert("You're now on the waitlist!", "http://hackfsu.com");
 
       $('#submitbtn').attr('disabled', false);
       $('#submitbtn').html(oldregtext);
