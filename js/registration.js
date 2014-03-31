@@ -13,6 +13,8 @@ function getData () {
   }, {skillset: []});
 }
 
+var oldregtext = $('#submitbtn').html();
+
 function register () {
   Parse.initialize("4NDzxeC8KxdZi4Kyok7QfGhtS27GuHfntNh9ZSfL", "O0orh0DoOffqBmmtkWG1eWgZxXHiHYHOsH6x57cU");
 
@@ -24,7 +26,7 @@ function register () {
 
   if (data.passwordconfirm != data.password) {
     $('#submitbtn').attr('disabled', false);
-    $('#submitbtn').html('Submit Registration');
+    $('#submitbtn').html(oldregtext);
     return alert("Passwords do not match!");
   }
 
@@ -38,12 +40,12 @@ function register () {
       alert("You've been signed up successfully!", "http://hackfsu.com");
 
       $('#submitbtn').attr('disabled', false);
-      $('#submitbtn').html('Submit Registration');
+      $('#submitbtn').html(oldregtext);
     }, function (error) {
       alert(error.message);
 
       $('#submitbtn').attr('disabled', false);
-      $('#submitbtn').html('Submit Registration');
+      $('#submitbtn').html(oldregtext);
     });
   }
 
@@ -61,7 +63,7 @@ function register () {
       var ext = parts[parts.length - 1].toUpperCase();
       if (ext !== "PDF") {
         $('#submitbtn').attr('disabled', false);
-        $('#submitbtn').html('Submit Registration');
+        $('#submitbtn').html(oldregtext);
         return alert("Resume must be .pdf file");
       }
 
