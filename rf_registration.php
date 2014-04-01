@@ -75,6 +75,12 @@
             <h2 class="section-title montserrat-font">Registration</h2>
             <div class="title-separator"></div> 
 
+            <p>
+              Unfortunately we're all filled up on registrations, but you can still register for the waitlist and we'll let you know if space becomes available!
+            </p>
+
+            <br />
+
             <form id="regform">
 
               <ul id="register-form">
@@ -116,7 +122,7 @@
 
               </ul>
 
-              <button type="submit" class="button black" id="submitbtn">Submit Registration</button>
+              <button type="submit" class="button black" id="submitbtn">Get on the waitlist</button>
 
             </form>
 
