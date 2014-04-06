@@ -22,9 +22,9 @@ jQuery(document).ready(function() {
       $('.big-countdown').html(pad(days) + "d " + pad(hours) + "h " + pad(minutes) + "m " + pad(timeto) + "s ");
     }
 
-    updateTime();
+    //updateTime();
 
-    setInterval(updateTime, 1000);
+    //setInterval(updateTime, 1000);
 
     jQuery(".home").height(jQuery(window).height() - 150);
 
