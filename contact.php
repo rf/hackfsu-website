@@ -11,7 +11,7 @@ if (isset($_POST['send-message'])) {
   }
   $headers = "From: info@hackfsu.com\r\n";
   $headers .= 'Content-Type: text/plain; charset=utf-8';
-  $success = mail($to, $subject, $message, $headers '‑finfo@hackfsu.com');
+  $success = mail($to, $subject, $message, $headers, '‑finfo@hackfsu.com');
   <html>
 
   <head>
